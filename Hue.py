@@ -80,9 +80,6 @@ while True:
     joint_red = find_joint_average(mask_list_red)
     draw_joint(joint_red, frame, white)
 
-    if (joint_blue.get_pos() != (0,0)) and (joint_red.get_pos() != (0,0)):
-        cv.line(frame, joint_blue.get_pos(), joint_red.get_pos(), white, 5
-
     cv.imshow('frame', frame)
     if cv.waitKey(1) == ord('q'):
         break
